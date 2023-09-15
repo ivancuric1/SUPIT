@@ -1,0 +1,208 @@
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+  
+  #tipkanje_video
+  {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -10;
+      object-fit: cover;
+  }
+  
+  /* Navbar baza*/
+  .navbar 
+    {
+      justify-content: left;
+      width: 110%;
+      background-color: black;
+    }
+    
+     /* Navbar hover */
+     .navbar a:hover 
+     {
+      background-color: black;
+      color: yellow;
+     }
+   
+     .icon_color 
+     {
+       color: orange;
+     }
+  
+     .login-col {
+      color: rgb(50, 187, 233);
+  }
+  
+    /* Navbar linkovi */
+    .navbar a
+    {
+      float: left;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .section_animation {
+        animation: fade_in 1s;
+    }
+    
+
+     h1 {
+      font-size: 48px;
+      text-align: center;
+      }
+    
+    .hidden {
+      display: none;
+    }
+    
+    h2 {
+      font-size: 32px;
+      color: red;
+      text-align: center;
+    }
+  
+    /* kontakt forma */
+  .modal 
+  {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modal Content */
+.modal 
+{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#open-contact-modal {
+  color: white;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* Close gumb */
+.close 
+{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.form-group 
+{
+  margin-bottom: 20px;
+}
+
+label 
+{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea 
+{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"],
+button[type="button"] 
+{
+  background-color: #2968d5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Nastavni plan*/
+#nastavni_plan_hidden 
+{
+  display: none;
+}
+
+
+/* Tipkanje */
+#tipkanje_video {
+  width: 100%; 
+}
+
+#typewriter {
+  font-weight: 500;
+  text-shadow: 2px 2px 5px #000000;
+  font-size: 52px;
+  z-index: 1;
+  position: absolute; 
+  top: 20%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  padding: 20px;
+}
+
+#line1 {
+  padding-right: 5px;
+  border-right: 8px solid transparent;
+  animation: blinkCursor 0.5s infinite;
+}
+
+#line2 {
+  border-right: 8px solid transparent;
+  display: inline-block;
+  padding-right: 5px;
+  animation: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin: 0; 
+}
+
+/* Logout*/
+#logout_btn {
+  display: none;
+}
+
+
+    
+  

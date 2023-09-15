@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT projektni zadatak</title>
+
+     <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Navbar icons -->
+    <script src="https://kit.fontawesome.com/5a17698d7d.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/novost1.css" type="text/css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+          <a href="login.html" id="login_btn">Prijavi se&nbsp;<i
+            class="fa-solid fa-right-to-bracket login-col"></i></a>
+    <a href="#" id="logout_btn"><i class="fa-solid fa-right-to-bracket login-col"></i>&nbsp;Odjavi se <span
+            id="span_show_username"></span></a>
+            <a href="index.html"><i class="fa-solid fa-house-chimney icon_color"></i>&nbsp;Početna</a>
+            <a href="o-nama.html"><i class="fa-regular fa-comments icon_color"></i>&nbsp;O nama</a>
+            <a href="novosti.html"><i class="fa-solid fa-circle-info icon_color"></i>&nbsp;Novosti</a>
+            <a href="nastavni_plan.html" id="nastavni_plan_hidden"><i
+                class="fa-regular fa-calendar icon-col"></i>&nbsp;Nastavni plan</a>
+            <a id="open-contact-modal"><i class="fa-solid fa-envelope icon_color"></i>&nbsp;Kontakt</a>
+        </div>
+    </header>
+
+    <!-- Header slika i tekst unutar -->
+    <div class="image-container">
+        <img src="../img/novost1.jpg">
+        <p class="tekst_unutar_slike">Student Josip Stanišić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti.</p>
+    </div>
+
+    <!-- Naslov -->
+    <h1 class="naslov">WorldSkills natjecanje - Kazan 2019.</h1>
+    <hr class="__hr">
+
+    <!-- tekst sekcija -->
+    <section>
+        <div class="content">
+            <p>
+                Nakon godinu dana priprema za natjecanje WorldSkills
+                Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                cijelog svijeta, trud se itekako isplatio. Josip,
+                student 3. godine preddiplomskog studija sistemskog
+                inženjerstva osvojio je 12. mjesto u vještini IT
+                Networks and System Administration te osvojio medalju
+                izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                mentorima koji su ga pripremali za ovo natjecanje -
+                voditelju studija sistemskog inženjerstva Silviju
+                Papiću, voditelju katedre za operacijske sustave -
+                Vedranu Dakiću i asistentu na studiju sistemskog
+                inženjerstva - Jasminu Redžepagiću. Čestitke i našem
+                studentu 3.godine preddiplomskog studija programskog
+                inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                16.mjestu u vještini IT Software Solutions for Business.
+            </p>
+        </div>
+
+        <!-- Galerija slika/video -->
+        <div class="content-container">
+          <div>
+              <div class="image-container-gallery">
+                  <a href="../img/galerija1.jpg" data-lightbox="slike">
+                      <img src="..//img/galerija1.jpg">
+                  </a>
+                  <a href="..//img/galerija2.jpg" data-lightbox="slike">
+                      <img src="..//img/galerija2.jpg">
+                  </a>
+              </div>
+              <div class="video-container">
+                  <video width="620" controls>
+                      <source src="..//video/worldskills.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+          </div>
+      </div>
+
+    <!-- Footer -->
+    <footer class="end">
+        <img src="..//img/zaiskri-bg.jpg" alt="end">
+        <div>
+            <p class="footer_img_tekst">BUDI IZVRSTAN U ONOME ŠTO VOLIŠ</p>
+            <p class="footer_img_tekst gradient_zaiskri">ZAISKRI</p>
+        </div>
+    </footer>
+
+     <!-- Kontakt -->
+     <div id="contact-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <form id="contact-form" method="post" action="https://www.fulek.com/mvc/supit/project-contact-form">
+            <h3><i class="fa-solid fa-envelope icon_color2"></i>&nbsp;Kontaktirajte nas</h2>
+            <div class="form-group">
+              <label for="full-name">Puno ime:</label>
+              <input type="text" id="full-name" name="fullName" required>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="importance">Važnost poruke:</label>
+              <select id="importance" name="importance" required>
+                <option value="high">Visoka</option>
+                <option value="low">Niska</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Poruka:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="receive-notifications">Želim primati obavijesti:</label>
+              <input type="checkbox" id="receive-notifications" name="receiveNotifications" value="true">
+            </div>
+            <div class="form-group">
+              <button type="submit">Pošalji</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+         <!--Nastavni Plan-->
+       <script src="..//js/show_hide_nastavni_plan.js"></script>
+
+       <!--Kontakt-->
+        <script src="../js/kontakt.js"></script>
+
+</body>
+</html>

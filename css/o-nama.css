@@ -1,0 +1,451 @@
+body {
+    overflow-x: hidden; /* Hide scrollbars */
+  }
+  
+  /* Navbar base */
+  .navbar 
+    {
+      justify-content: left;
+      width: 110%;
+      background-color: black;
+    }
+
+     /* Navbar linkovi */
+     .navbar a 
+     {
+       float: left;
+       color: white;
+       text-decoration: none;
+       font-size: 14px;
+       text-align: center;
+       padding: 15px;
+     }
+    
+     /* Navbar hover */
+     .navbar a:hover 
+     {
+       background-color: black;
+       color: yellow;
+     }
+   
+     .icon_color 
+     {
+       color: orange;
+     }
+  
+     .login_color
+     {
+       color: lightblue;
+     }
+
+      /* kampus slika */
+      .kampus_iz_zraka {
+        height: 35vh;
+        background-image: url(..//img/kampus-iz-zraka-min-1.jpg);
+        background-position: center;
+        opacity: 0; 
+        animation: fade-in-img 3s forwards; 
+      }
+  
+     /* o-nama */
+     .o-nama
+     {
+      padding-top: 15px;
+      text-align: center;
+      opacity: 0; 
+      animation: fade-in 3s forwards; 
+     }
+  
+      /* linija ispod o-nama naslova */
+     .hr__h1 
+     {
+      width: 50%;
+      border: 1px solid orange;
+      border-top: 1px solid black;
+      opacity: 0; 
+      animation: fade-in 3s forwards; 
+    }
+  
+    /* naslovi */
+    .naslov
+    { 
+      text-align: center;
+    padding-bottom: 150px;
+    color: rgb(147, 67, 76)
+    }
+  
+     /* nase vrijednosti */
+    .nase_vrijednosti_text 
+    {
+      padding: 50px 20%;
+    }
+  
+      /* pisana slova font */
+    .cudan_font_text_style
+     {
+      font-size: 22px;
+      font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    }
+  
+   /* Style for the grid items */
+   .vrijednosti 
+   {
+      border: 2px solid rgb(230, 229, 229);
+      text-align: center;
+      font-size: 1em;
+    }
+  
+    /* grid vrijednosti */
+    .grid_vrijednosti 
+    {
+      margin: 0 auto;
+      display: grid;
+      width: 70%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+  
+    /* vrijednosti_grid_naslovi */
+    .vrijednosti > h3 
+    {
+      padding: 20px 20px 5px 20px;
+      font-size: 19px;
+      text-align: left;
+    }
+  
+     /* ravna linija ispod vrijednosti_grid_naslovi */
+     .__hr {
+      width: 92%;
+      border: 1px solid rgb(230, 229, 229);
+    }
+  
+      /* vrijednosti_grid_text */
+    .vrijednosti > p 
+    {
+      text-align: justify;
+      font-size: 15px;
+      padding: 15px 20px;
+    }
+  
+    /* povijest tekst */
+    .povijest 
+    {
+      padding: 100px 20%;
+    }
+  
+    /* povijest naslov */
+    .povijest_dogadaj > h3 
+    {
+      font-size: 19px;
+      text-align: left;
+      padding: 20px 20px 5px 20px;
+    }
+  
+      /* boja godina */
+    .povijest_dogadaj > h3 > span 
+    {
+      color: rgb(96, 126, 183);
+    }
+  
+      /* ravna linija ispod povijesti_naslov */
+    .hr__ 
+    {
+      width: 92%;
+      border: 1px solid rgb(230, 229, 229);
+    }
+  
+    /* povijest tekst */
+    .povijest_dogadaj > p 
+    {
+      text-align: justify;
+      font-size: 15px;
+      padding: 15px 20px;
+    }
+  
+      /* povijest rub */
+    .povijest_dogadaj 
+    {
+      text-align: center;
+      font-size: 0.5em;
+      border: 2px solid rgb(230, 229, 229);
+    }
+    
+      /* povijest grid */
+    .grid_povijest 
+    {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 10px;
+      margin: 0 auto;
+      width: 60%;
+    }
+  
+    /* algebra grupa tekst */
+    .algebra_grupa_text 
+    {
+      padding: 50px 20%;
+    }
+  
+    /* algebra grupa grid */
+    .algebra_grupa_grid 
+    {
+      display: grid;
+      grid-gap: 40px;
+      grid-template-columns: auto auto auto auto;
+      grid-template-rows: auto auto;
+      margin: 0 auto;
+      width: 80%;
+    }
+  
+    /* algebra grupa naslovi */
+    .algebra_grupa_icon > h3 
+    {
+      text-align: center;
+      font-weight: bold;
+      font-size: 15px;
+      text-align: left;
+    }
+  
+      /* algebra grupa icons */
+    .algebra_grupa_icon > img
+    {
+      max-width: auto;
+      margin-right: auto;
+      display: block;
+      margin-left: auto;
+      max-height: 60px;
+    }
+  
+    /* pozadina (kako do nas)) */
+    .lokacija_pozadina 
+    {
+      background-image: url(..//img/kakoDoNas.jpg);
+      background-attachment: fixed;
+      padding: 10px;
+    }
+  
+    /* kako do nas naslov */
+    .kako_do_nas
+    {
+      padding: 100px 20%;
+    }
+  
+    .lokacija_grid_icon 
+    {
+      padding: 20px;
+      text-align: center;
+      background-color: rgb(241, 240, 240);
+      padding: 20px;
+      text-align: center;
+      border: 1px solid greys;
+    }
+  
+    /* lokacija (blue icons) */
+    .icon {
+      color: rgb(63, 123, 255);
+    }
+  
+    /* naslovi lokacija */
+    .naslov_lokacija 
+    {
+      font-size: 24px;
+      text-align: left;
+      width: 100%;
+    }
+  
+    /* tekst lokacija */
+    .tekst_lokacija 
+    {
+      font-size: 16px;
+      padding: 10px 50px;
+      text-align: left;
+    }
+  
+  
+      /* lokacija grid */
+    .lokacija_grid_icon
+    {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid gray;
+      background-color: white;
+    }
+  
+  
+    .lokacija_grid 
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+      margin-bottom: 20px;
+      margin: 20px 20%;
+    }
+  
+    /* google-maps */
+    .algebra_kako_do_nas 
+    {
+      display: flex;
+      justify-content: center;
+    }
+  
+   /* footer slika */
+   .end > img 
+   {
+      object-fit: cover;
+      width: 100%;
+      height: 300px;
+    }
+    .end > div 
+    {
+      height: 0;
+    }
+  
+    /* footer tekst (BUDI IZVRSTAN U ONOME ŠTO VOLIŠ) */
+  .footer_img_tekst 
+  {
+    position: relative;
+    top: -250px;
+    left: 50%;
+    transform: translate(-50%, 30%);
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 3px 2px black;
+    text-align: center;
+  }
+  
+    /* footer tekst (ZAISKRI) */
+  .gradient_zaiskri 
+  {
+    color: rgb(129, 34, 40);
+    text-shadow: 2px 2px black;
+    font-size: 60px;
+    font-weight: 600;
+  }
+  
+  /* Kontakt */
+  .modal 
+  {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  #open-contact-modal {
+    color: white;
+  }
+    
+  /* Modal Content */
+  /* The Modal (background) */
+  .modal 
+  {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modal Content */
+  .modal-content
+  {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  }
+  
+  /* Close Button */
+  .close 
+  {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+  
+  /* Form Styles */
+  .form-group 
+  {
+  margin-bottom: 20px;
+  }
+  
+  label 
+  {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea 
+  {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  }
+  
+  button[type="submit"],
+  button[type="button"] 
+  {
+  background-color: #2968d5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+  
+  
+  /* Animacije */
+  @keyframes fade-in-img {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0; /
+    }
+    to {
+      opacity: 1; 
+    }
+  }
+
+  /* Nastavni plan*/
+#nastavni_plan_hidden {
+  display: none;
+}
+
+/* Logout*/
+#logout_btn {
+  display: none;
+}
+
+.login-col {
+  color: rgb(50, 187, 233);
+}
+
+
+
+

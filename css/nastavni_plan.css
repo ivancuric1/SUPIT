@@ -1,0 +1,259 @@
+body {
+    overflow: hidden; /* Hide scrollbars */
+  }
+   
+  /* Navbar baza*/
+  .navbar 
+    {
+      justify-content: left;
+      width: 110%;
+      background-color: black;
+    }
+    
+     /* Navbar hover */
+     .navbar a:hover 
+     {
+      background-color: black;
+      color: yellow;
+     }
+   
+     .icon_color 
+     {
+       color: orange;
+     }
+  
+     .login-col {
+      color: rgb(50, 187, 233);
+  }
+  
+    /* Navbar linkovi */
+    .navbar a
+    {
+      float: left;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .section_animation 
+    {
+        animation: fade_in 1s;
+    }
+
+     h1 
+     {
+      font-size: 48px;
+      text-align: center;
+      }
+    
+    .hidden 
+    {
+      display: none;
+    }
+    
+    h2 
+    {
+      font-size: 32px;
+      color: red;
+      text-align: center;
+    }
+
+      /* Naslov */
+  .first_h1_tag 
+  {
+    text-align: center;
+    padding-top: 2vw;
+    animation: slidein_bottom 1s;
+}
+
+ /* Linija ispod naslova */
+.hr__
+{
+    width: 50%;
+    border: 1px solid orange;
+    margin-bottom: 50px;
+    animation: slidein_bottom 1s;
+}
+
+    /* KONTAKT */
+  .modal 
+  {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+#open-contact-modal {
+  color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+/* Close Button */
+.close 
+{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Form Styles */
+.form-group 
+{
+  margin-bottom: 20px;
+}
+
+label 
+{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea 
+{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"],
+button[type="button"] 
+{
+  background-color: #2968d5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container 
+{
+    animation: fade_in 3s;
+}
+
+.inputKolegij 
+{
+    font-weight: bold;
+    height: 290px;
+    margin-right: 25px;
+}
+
+.inputKolegij>input 
+{
+    min-width: 75%;
+    border: 1px solid rgba(120, 120, 120, .499);
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+table 
+{
+    margin-bottom: 60px;
+}
+
+table>thead>tr>th 
+{
+    padding: 10px 19px 6px 6px;
+}
+
+table>tbody>tr:nth-child(even) 
+{
+    background-color: rgb(220, 230, 250);
+}
+
+table>tbody>tr>td 
+{
+    padding: 5px;
+    border: 1px solid rgba(120, 120, 120, .499);
+    padding-right: 20px;
+}
+
+#sum>td 
+{
+    font-weight: bold;
+    border: 1px solid rgba(120, 120, 120, .499);
+    background-color: white;
+}
+
+/* footer tekst (BUDI IZVRSTAN U ONOME ŠTO VOLIŠ) */
+.footer_img_tekst 
+{
+  position: relative;
+  top: -400px;
+  left: 50%;
+  transform: translate(-50%, 30%);
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  text-shadow: 3px 2px black;
+  text-align: center;
+}
+
+ /* footer tekst (ZAISKRI) */
+ .gradient_zaiskri 
+ {
+   color: rgb(129, 34, 40);
+   text-shadow: 2px 2px black;
+   font-size: 60px;
+   font-weight: 600;
+ }
+
+ /* footer slika */
+.end > img 
+{
+   object-fit: cover;
+   width: 100%;
+   height: 450px;
+ }
+ .end > div 
+ {
+   height: 0;
+ }
+
+ /* Animacije*/
+
+ @keyframes slidein_bottom {
+  0% {
+      transform: translateY(100px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+ @keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
